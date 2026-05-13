@@ -3,7 +3,8 @@
 Responsável por:
 
 ```
-editar.phpexcluir.php
+editar.php
+excluir.php
 ```
 
 ----------
