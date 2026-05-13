@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+.topo {
+    background-color: #2f80ed;
+    color: white;
+    padding: 20px;
+}
+
+.topo h1 {
+    margin-bottom: 10px;
+}
+
+.topo nav {
+    display: flex;
+    gap: 10px;
+}
+
+.topo a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container {
+    padding: 20px;
+}
+
+.rodape {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    background-color: #ddd;
+}
