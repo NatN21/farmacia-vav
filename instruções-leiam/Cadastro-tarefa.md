@@ -1,4 +1,4 @@
-﻿# Integrante 1 — Cadastro de Produtos
+﻿# Pietro — Cadastro de Produtos
 
 Responsável por:
 
@@ -40,7 +40,8 @@ Criar a página que adiciona novos produtos ao banco.
 # Estrutura esperada
 
 ```
-require conexãorequire headerif ($_POST) {
+require conexão
+require headerif ($_POST) {
    INSERT 
 }
 formulário HTML
