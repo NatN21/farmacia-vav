@@ -1,4 +1,4 @@
-﻿# Integrante 3 — Edição e Exclusão
+﻿# Mariana — Edição e Exclusão
 
 Responsável por:
 
