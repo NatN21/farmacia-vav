@@ -9,6 +9,6 @@ $stmt->execute();
 $produtos = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 
-include 'produtos.php';
+include 'inicio.php';
 ?>
 
