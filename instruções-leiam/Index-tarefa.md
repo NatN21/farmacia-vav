@@ -1,4 +1,4 @@
-﻿# Integrante 2 — Listagem de Produtos
+﻿# Maria Eduarda — Listagem de Produtos
 
 Responsável por:
 
