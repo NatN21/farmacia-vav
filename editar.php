@@ -46,5 +46,36 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     header("Location: index.php");
     exit;
 }
+?>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Editar Produto</title>
+</head>
+<body>
 
+    <h1>Editar Produto</h1>
 
+    <form method="POST">
+
+        <label>Nome:</label><br>
+        <input type="text" name="nome" 
+               value="<?= $produto['nome']; ?>" required>
+        <br><br>
+
+        <label>Preço:</label><br>
+        <input type="number" step="0.01" name="preco" 
+               value="<?= $produto['preco']; ?>" required>
+        <br><br>
+
+        <label>Descrição:</label><br>
+        <textarea name="descricao" required><?= $produto['descricao']; ?></textarea>
+        <br><br>
+
+        <button type="submit">Atualizar</button>
+
+    </form>
+
+</body>
+</html>
