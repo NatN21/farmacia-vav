@@ -1,43 +1,117 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f7fa;
-    color: #333;
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
 }
 
 .topo {
-    background-color: #2f80ed;
-    color: white;
-    padding: 20px;
+  background-color: #2f80ed;
+  color: white;
+  padding: 20px;
 }
 
 .topo h1 {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .topo nav {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 20px;
 }
 
 .topo a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border: #ddd solid 2px;
+  border-radius: 8px;
+  padding: 5px 10px;
 }
 
 .container {
-    padding: 20px;
+  padding: 20px;
 }
 
 .rodape {
-    margin-top: 40px;
-    padding: 20px;
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+  background-color: #ddd;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* tabela de exibição dos produtos para telas maiores */
+
+@media (min-width: 750px) {
+  .titulo {
     text-align: center;
-    background-color: #ddd;
+    margin-bottom: 30px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  th {
+    background-color: #2f80ed;
+    color: white;
+    padding: 15px;
+  }
+
+  td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+
+  tr:hover {
+    background-color: #f0fdfa;
+  }
+
+  .preco {
+    color: #059669;
+    font-weight: bold;
+  }
+
+  .estoque {
+    color: #2563eb;
+    font-weight: bold;
+  }
+
+  .acoes a {
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    color: white;
+    margin: 0 10px;
+  }
+
+  .editar {
+    background-color: #14b8a6;
+  }
+  .editar:hover {
+    background-color: #10796c;
+  }
+
+  .excluir {
+    background-color: #dc2626;
+  }
+  .excluir:hover {
+    background-color: #8e1a1a;
+  }
 }
