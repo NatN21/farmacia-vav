@@ -1,5 +1,5 @@
 <?php
-require 'conexao.php';
+require_once './config/conexao.php';
 
 
 if (!isset($_GET['id'])) {
@@ -26,19 +26,22 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $nome = $_POST['nome'];
     $preco = $_POST['preco'];
-    $descricao = $_POST['descricao'];
+    $fabricante = $_POST['fabricante'];
+    $estoque = $_POST['estoque'];
 
     $update = "UPDATE produtos 
                SET nome = :nome,
                    preco = :preco,
-                   descricao = :descricao
+                   fabricante = :fabricante,
+                   estoque = :estoque
                WHERE id = :id";
 
     $stmt = $pdo->prepare($update);
 
     $stmt->bindParam(':nome', $nome);
     $stmt->bindParam(':preco', $preco);
-    $stmt->bindParam(':descricao', $descricao);
+    $stmt->bindParam(':fabricante', $fabricante);
+    $stmt->bindParam(':estoque', $estoque);
     $stmt->bindParam(':id', $id);
 
     $stmt->execute();
@@ -46,36 +49,34 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     header("Location: index.php");
     exit;
 }
+
+require_once './includes/header.php';
 ?>
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Editar Produto</title>
-</head>
-<body>
 
     <h1>Editar Produto</h1>
 
-    <form method="POST">
+    <form method="POST" class="form-produto">
 
         <label>Nome:</label><br>
         <input type="text" name="nome" 
-               value="<?= $produto['nome']; ?>" required>
-        <br><br>
+               value="<?= htmlspecialchars($produto['nome']); ?>" required>
 
         <label>Preço:</label><br>
         <input type="number" step="0.01" name="preco" 
-               value="<?= $produto['preco']; ?>" required>
-        <br><br>
+               value="<?= htmlspecialchars($produto['preco']); ?>" required>
 
-        <label>Descrição:</label><br>
-        <textarea name="descricao" required><?= $produto['descricao']; ?></textarea>
-        <br><br>
+        <label>Fabricante:</label><br>
+        <input type="text" name="fabricante"
+               value="<?= htmlspecialchars($produto['fabricante']); ?>" required>
 
+        <label>Estoque:</label><br>
+        <input type="number" step="1" name="estoque" 
+               value="<?= htmlspecialchars($produto['estoque']); ?>" required>
+        
         <button type="submit">Atualizar</button>
 
     </form>
+<?php
+require_once './includes/footer.php'; 
 
-</body>
-</html>
+?>
