@@ -1,6 +1,5 @@
 <?php
-require 'conexao.php';
-
+require_once './config/conexao.php';
 
 if (!isset($_GET['id'])) {
     die("ID do produto não informado.");
