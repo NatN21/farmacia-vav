@@ -51,8 +51,71 @@ form {
   gap: 12px;
 }
 
-/* tabela de exibição dos produtos para telas maiores */
+input,
+textarea,
+button {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
 
+button {
+  background-color: #14b8a6;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.tabela-responsiva {
+  overflow-x: auto;
+}
+.editar {
+    background-color: #14b8a6;
+  }
+.excluir {
+    background-color: #dc2626;
+  }
+
+/* Exibição da tabela pensando em mobile First*/
+@media (max-width: 750px) {
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  th,
+  td {
+    padding: 12px;
+    text-align: left;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f9fafb;
+  }
+
+  tr:hover {
+    background-color: #eef2ff;
+  }
+
+  .acoes {
+    display: flex;
+    gap: 8px;
+  }
+
+  .acoes a {
+    padding: 8px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+  }
+  
+}
+
+/* tabela de exibição dos produtos para telas maiores */
 @media (min-width: 750px) {
   .titulo {
     text-align: center;
@@ -101,16 +164,10 @@ form {
     margin: 0 10px;
   }
 
-  .editar {
-    background-color: #14b8a6;
-  }
   .editar:hover {
     background-color: #10796c;
   }
 
-  .excluir {
-    background-color: #dc2626;
-  }
   .excluir:hover {
     background-color: #8e1a1a;
   }

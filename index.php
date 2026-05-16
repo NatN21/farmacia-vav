@@ -16,6 +16,8 @@ $produtos = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <h2>Lista de Produtos</h2>
         </div>
 
+        <div class="tabela-responsiva">
+
         <?php if(count($produtos) > 0): ?>
         <table>
 
@@ -67,6 +69,7 @@ $produtos = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <?php endforeach; ?>
 
         </table>
+        </div>
 
         <?php else: ?>
 
