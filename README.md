@@ -17,7 +17,7 @@ O projeto aplica conceitos de:
 # 🚀 Tecnologias Utilizadas
 
 - PHP
-- MySQL / MariaDB
+- MySQL
 - PDO
 - HTML5
 - CSS3
@@ -26,7 +26,7 @@ O projeto aplica conceitos de:
 
 ---
 
-# 📂 Estrutura do Projeto
+# 📂 Estrutura do Projeto 
 
 ```text
 farmacia-vav/
@@ -77,6 +77,11 @@ O projeto foi desenvolvido seguindo a abordagem **Mobile First**, garantindo boa
 # 👨‍💻 Equipe
 
 Projeto desenvolvido em grupo para fins educacionais.
+Grupo: 
+- Maria Eduarda 
+- Mariana Rasmussen 
+- Natan Costa (gerente) 
+- Pietro Dopp 
 
 ---
 
