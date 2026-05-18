@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Farmácia VAV</title>
 
-    <link rel="stylesheet" href="/farmacia-vav/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
@@ -13,8 +13,8 @@
     <h1>💊 Farmácia VAV</h1>
 
     <nav>
-        <a href="/farmacia-vav/index.php">Início</a>
-        <a href="/farmacia-vav/cadastro.php">Cadastrar</a>
+        <a href="/farmacia_vav/index.php">Início</a>
+        <a href="/farmacia_vav/cadastro.php">Cadastrar</a>
     </nav>
 </header>
 
