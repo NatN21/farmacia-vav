@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 18/05/2026 às 13:57
+-- Tempo de geração: 18/05/2026 às 17:08
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -27,8 +27,6 @@ SET time_zone = "+00:00";
 -- Estrutura para tabela `produtos`
 --
 
-USE farmacia_vav;
-
 CREATE TABLE `produtos` (
   `id` int(11) NOT NULL,
   `nome` varchar(50) NOT NULL,
@@ -36,6 +34,18 @@ CREATE TABLE `produtos` (
   `preco` decimal(10,2) NOT NULL,
   `estoque` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `produtos`
+--
+
+INSERT INTO `produtos` (`id`, `nome`, `fabricante`, `preco`, `estoque`) VALUES
+(4, 'Dipirona', 'EMS', 6.50, 340),
+(5, 'Cimegripe', 'Cimed', 15.90, 180),
+(6, 'Puran', 'Sanofi', 21.00, 85),
+(7, 'Dorflex', 'Sanofi', 22.90, 250),
+(8, 'Glifage', 'Merck', 18.50, 120),
+(9, 'Losartana Potássica', 'Neo Química', 8.90, 410);
 
 --
 -- Índices para tabelas despejadas
@@ -55,7 +65,7 @@ ALTER TABLE `produtos`
 -- AUTO_INCREMENT de tabela `produtos`
 --
 ALTER TABLE `produtos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
