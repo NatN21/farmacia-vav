@@ -27,9 +27,35 @@ if ($_POST) {
     echo "Produto cadastrado com sucesso!";
 }
 ?>
+<form method="POST">
 
-<form>
-    <h1>Formulario de Cadastro</h1>
+    <h1>Cadastrar Produto</h1>
+
+
+    <label>Nome:</label>
+    <input type="text" name="nome">
+
+    <br><br>
+
+    <label>Fabricante:</label>
+    <input type="text" name="fabricante">
+
+    <br><br>
+
+    <label>Preço:</label>
+    <input type="number" step="0.01" name="preco">
+
+    <br><br>
+
+    <label>Estoque:</label>
+    <input type="number" name="estoque">
+
+    <br><br>
+
+    <button type="submit">
+        Cadastrar
+    </button>
+
 </form>
 
 <?php
