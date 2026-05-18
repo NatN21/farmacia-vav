@@ -33,22 +33,22 @@ if ($_POST) {
 
 
     <label>Nome:</label>
-    <input type="text" name="nome">
+    <input type="text" name="nome" required>
 
     <br><br>
 
     <label>Fabricante:</label>
-    <input type="text" name="fabricante">
+    <input type="text" name="fabricante" required>
 
     <br><br>
 
     <label>Preço:</label>
-    <input type="number" step="0.01" name="preco">
+    <input type="number" step="0.01" name="preco" required>
 
     <br><br>
 
     <label>Estoque:</label>
-    <input type="number" name="estoque">
+    <input type="number" name="estoque" required>
 
     <br><br>
 
