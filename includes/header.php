@@ -13,8 +13,8 @@
     <h1>💊 Farmácia VAV</h1>
 
     <nav>
-        <a href="/farmacia_vav/index.php">Início</a>
-        <a href="/farmacia_vav/cadastro.php">Cadastrar</a>
+        <a href="./index.php">Início</a>
+        <a href="./cadastro.php">Cadastrar</a>
     </nav>
 </header>
 
